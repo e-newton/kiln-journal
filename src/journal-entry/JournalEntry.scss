@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.JournalEntry {
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    background-color: $BACKGROUND;
+    box-shadow: $BOX_SHADOW;
+}

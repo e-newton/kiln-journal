@@ -3,7 +3,9 @@ import './JournalEntry.scss';
 
 function JournalEntry() {
     return (
-        <h1>Hello world!</h1>
+        <div className='JournalEntry'>
+
+        </div>
     )
 }
 
