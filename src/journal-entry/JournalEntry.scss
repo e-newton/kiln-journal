@@ -14,8 +14,10 @@
 
     form {
         display: flex;
-        justify-items: center;
+        justify-items: flex-start;
+        justify-content: center;
         flex-flow: wrap;
+        width: 100%;
         margin: 5px 16px 5px;
 
         label,input, textarea, .text-area{
@@ -58,19 +60,43 @@
             box-sizing: border-box;
         }
 
-        .submit-button {
+        .button-box {
+            display: flex;
+            margin-left: 32px;
+        }
+
+        button {
+            margin-top: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 32px;
             height: 32px;
-            border-radius: 32px;
-            align-self: flex-end;
+            min-width: 32px;
+            border-radius: 3px;
             border-style: none;
-            background-color: $SUCCESS;
+            font-size: medium;
+            background-color: $BACKGROUND;
+            transition: background-color 0.1s;
             &>* {
                 margin-top: 4px;
             }
+            &.options-button {
+                &:hover {
+                    background-color: darken($color: $BACKGROUND, $amount: 5);
+                }
+                &:active {
+                    background-color: darken($color: $BACKGROUND, $amount: 10);
+                }
+            }
+            &.submit-button {
+                &:hover {
+                    background-color: lighten($color: $SUCCESS, $amount: 5);
+                }
+                &:active {
+                    background-color: lighten($color: $SUCCESS, $amount: 10);
+                }
+            }
         }
+
     }
 }

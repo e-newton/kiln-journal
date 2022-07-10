@@ -29,9 +29,14 @@ function JournalEntry() {
                     <span>Notes</span>
                     <span className='text-area' role="textbox" contentEditable></span>
                 </label>
-                <button className='submit-button'>
-                    <FontAwesomeIcon icon={solid('check')} size={'lg'}/>
-                </button>
+                <div className='button-box'>
+                    <button className='submit-button'>
+                        <FontAwesomeIcon icon={solid('check')} size={'1x'}/>
+                    </button>
+                    <button className='options-button'>
+                        <FontAwesomeIcon icon={solid('ellipsis-vertical')} size={'1x'}/>
+                    </button>
+                </div>
             </form>
         </div>
     )
