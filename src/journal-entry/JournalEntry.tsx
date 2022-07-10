@@ -25,7 +25,7 @@ function JournalEntry() {
                 </label>
                 <label>
                     <span>Notes</span>
-                    <span role="textbox" contentEditable></span>
+                    <span className='text-area' role="textbox" contentEditable></span>
                 </label>
             </form>
         </div>
