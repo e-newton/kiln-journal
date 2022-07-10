@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {regular, solid} from '@fortawesome/fontawesome-svg-core/import.macro';
 import React from 'react';
 import './JournalEntry.scss';
 
@@ -27,6 +29,9 @@ function JournalEntry() {
                     <span>Notes</span>
                     <span className='text-area' role="textbox" contentEditable></span>
                 </label>
+                <button className='submit-button'>
+                    <FontAwesomeIcon icon={solid('check')} size={'lg'}/>
+                </button>
             </form>
         </div>
     )
